@@ -3,15 +3,20 @@ import { useState, useEffect } from "react";
 function Reloj({ hora }) {
   return (
     <>
-      <h3 className="clock2">{hora}</h3>
+      <div className="clock-display">{hora}</div>
+
       <style jsx>{`
-        .clock2 {
-          font-family: "Courier New", Courier, monospace;
-          font-size: 4rem;
-          color: rgb(1, 255, 255);
-          padding: 10px 20px;
-          justify-content: center;
+        .clock-display {
+          font-family: "Courier New", monospace;
+          font-size: 3.5rem;
+          color: #00f3ff;
           text-align: center;
+          padding: 1rem 2rem;
+          border: 2px solid rgba(0, 243, 255, 0.4);
+          border-radius: 12px;
+          background: rgba(0, 0, 0, 0.65);
+          box-shadow: 0 0 25px rgba(0, 243, 255, 0.3);
+          backdrop-filter: blur(4px);
         }
       `}</style>
     </>
@@ -36,69 +41,65 @@ const RelojEffect = () => {
 
   return (
     <>
-      <div className="digitalContainer">
+      <div className="digital-container">
         <h2 className="titulo">Reloj Digital</h2>
+
         {esVisible && <Reloj hora={hora} />}
-        <div className="button-container2">
-          <button className="start2" onClick={() => setEsVisible(true)}>
+
+        <div className="button-container">
+          <button className="btn start" onClick={() => setEsVisible(true)}>
             Iniciar
           </button>
-          <button className="stop2" onClick={() => setEsVisible(false)}>
+          <button className="btn stop" onClick={() => setEsVisible(false)}>
             Detener
           </button>
         </div>
       </div>
 
       <style jsx>{`
-        .digitalContainer {
-          background-size: cover;
-          width: 30%;
+        .digital-container {
+          width: 100%;
+          max-width: 380px;
+          margin: 2rem auto;
+          padding: 1.5rem;
+          background: linear-gradient(to bottom, #0b0e10, #101820);
+          border-radius: 15px;
+          border: 1px solid rgba(0, 243, 255, 0.2);
+          box-shadow: 0 0 18px rgba(0, 243, 255, 0.15);
         }
+
         .titulo {
           text-align: center;
-          color: rgb(7, 4, 25);
-          font-family: Verdana, Geneva, Tahoma, sans-serif;
-          font-size: 1rem;
+          color: #00eaff;
+          font-family: "Montserrat", sans-serif;
+          font-size: 1.3rem;
+          margin-bottom: 1.5rem;
+          letter-spacing: 1px;
         }
-        .clock2 {
-          font-family: "Courier New", Courier, monospace;
-          font-size: 4rem;
-          color: rgb(1, 255, 255);
-          padding: 10px 20px;
-          justify-content: center;
-          text-align: center;
-        }
-        .clock2 {
-          justify-content: center;
-        }
-        .button-container2 {
+
+        .button-container {
+          margin-top: 20px;
           display: flex;
           justify-content: center;
           gap: 1rem;
-          margin-top: 20px;
         }
-        .start2,
-        .stop2 {
-          padding: 0.5rem 1rem;
+
+        .btn {
+          padding: 0.6rem 1.4rem;
           font-size: 1rem;
-          color: rgb(0, 254, 255);
+          color: #00eaff;
+          background: transparent;
+          border: 1px solid #00eaff;
+          border-radius: 8px;
           cursor: pointer;
-          border: none;
-          border-radius: 5px;
-          transition: background-color 0.3s;
-          box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+          transition: 0.3s ease;
+          font-family: "Montserrat", sans-serif;
         }
-        .start2 {
-          background-color: rgb(3, 44, 76);
-        }
-        .stop2 {
-          background-color: rgb(3, 44, 76);
-        }
-        .start2:hover {
-          background-color: rgb(3, 70, 99);
-        }
-        .stop2:hover {
-          background-color: rgb(3, 70, 99);
+
+        .btn:hover {
+          background: #00eaff;
+          color: #0a0f10;
+          box-shadow: 0 0 12px rgba(0, 238, 255, 0.6);
         }
       `}</style>
     </>
