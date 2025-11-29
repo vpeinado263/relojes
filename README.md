@@ -39,4 +39,4 @@ Para los componentes funcionales, se utilizan hooks en lugar de los métodos cl�
 
 - **useEffect**: Este hook permite ejecutar efectos secundarios cuando un componente se monta, actualiza o desmonta. En el proyecto, se utiliza `useEffect` para inicializar y limpiar efectos como los relojes en el blog.
 
-in process : https://4ta-tarea-react-next-js.vercel.app/
+Demo en producción : https://4ta-tarea-react-next-js.vercel.app/
