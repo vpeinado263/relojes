@@ -17,7 +17,7 @@ const Navigation = () => {
         .menu {
           display: flex;
           align-items: center;
-          font-family: 'Roboto', sans-serif;
+          font-family: "Roboto", sans-serif;
           background-color: transparent;
         }
         .sub {
@@ -25,7 +25,7 @@ const Navigation = () => {
           border: none;
           cursor: pointer;
           display: flex;
-          gap: 20px; 
+          gap: 20px;
           padding: 10px;
           text-decoration: none;
         }
@@ -36,10 +36,9 @@ const Navigation = () => {
           padding: 10px 20px;
           border-radius: 5px;
           transition: background-color 0.3s ease;
-         
         }
         .bar:hover {
-          background-color: blue; 
+          background-color: blue;
           text-decoration: none;
         }
       `}</style>

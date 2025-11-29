@@ -6,13 +6,13 @@ El blog está desarrollado utilizando **React** y **Next.js**, aprovechando el s
 
 ## Contenidos del Blog
 
-1. **Introducción al Reloj**  
+1. **Introducción al Reloj**
    - Una descripción de lo que es un reloj, sus tipos y una breve historia.
 
-2. **Tipos de Relojes**  
+2. **Tipos de Relojes**
    - Explicación de los tipos de relojes, desde relojes de pulsera y de pared hasta los relojes digitales y análogos.
 
-3. **Primeros Relojes**  
+3. **Primeros Relojes**
    - Un apartado dedicado a la historia del primer reloj y quién fue su creador.
 
 ## Conceptos Aprendidos y Aplicados en el Proyecto
@@ -29,7 +29,7 @@ El **contexto** en React permite crear un "proveedor" de datos globales para los
 
 Los componentes en React siguen un ciclo de vida dividido en tres fases: montaje, actualización y desmontaje.
 
-- **Montaje**: El componente se crea y se inserta en el DOM. 
+- **Montaje**: El componente se crea y se inserta en el DOM.
 - **Actualización**: Se producen cambios en el estado o las props, y el componente se vuelve a renderizar.
 - **Desmontaje**: El componente se elimina del DOM.
 

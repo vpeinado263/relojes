@@ -2,7 +2,6 @@ import Navigation from "@/components/atoms/Navigation";
 import Blog from "@/components/organisms/Blog";
 import Head from "next/head";
 
-
 const tiposDeRelojes = () => {
   return (
     <>
@@ -12,14 +11,13 @@ const tiposDeRelojes = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/react.png" />
       </Head>
-      
+
       <div className="bodyAnalogico">
-        <Navigation/>
-        <Blog/>   
-       
+        <Navigation />
+        <Blog />
       </div>
     </>
-  )
-}
+  );
+};
 
 export default tiposDeRelojes;

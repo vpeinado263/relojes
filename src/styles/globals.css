@@ -14,14 +14,6 @@ a {
 }
 
 /*Reloj Digital colocar url en estilo propio*/
- .digitalContainer {
+.digitalContainer {
   background-image: url(../../public/funds/digital.jpg);
 }
-
-
-
-
-
-
-
- 

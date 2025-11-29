@@ -1,10 +1,11 @@
 import Navigation from "@/components/atoms/Navigation";
 import Clocks from "@/components/organisms/Clocks";
 
-import ClockContextProvider, { ClockContext } from "@/context/ClockContextProvider";
+import ClockContextProvider, {
+  ClockContext,
+} from "@/context/ClockContextProvider";
 
 import Head from "next/head";
-
 
 export default function Home() {
   return (
@@ -17,10 +18,10 @@ export default function Home() {
       </Head>
 
       <main>
-           <Navigation/>
-             <ClockContextProvider>
-                <Clocks/>
-             </ClockContextProvider>
+        <Navigation />
+        <ClockContextProvider>
+          <Clocks />
+        </ClockContextProvider>
       </main>
     </>
   );
