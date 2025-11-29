@@ -3,43 +3,62 @@ import Link from "next/link";
 const Navigation = () => {
   return (
     <>
-      <div className="menu">
+      <header className="menu">
         <nav className="sub">
           <Link href="/">
-            <span className="bar">Inicio / </span>
+            <span className="bar">Inicio</span>
           </Link>
           <Link href="/tiposDeRelojes">
             <span className="bar">Tipos de Relojes</span>
           </Link>
         </nav>
-      </div>
+      </header>
+
       <style jsx>{`
         .menu {
+          width: 100%;
+          background-color: #0d0d0d; /* negro elegante */
+          border-bottom: 1px solid rgba(255, 215, 0, 0.4); /* dorado premium */
+          padding: 15px 0;
           display: flex;
-          align-items: center;
-          font-family: "Roboto", sans-serif;
-          background-color: transparent;
+          justify-content: center;
+          box-shadow: 0 2px 8px rgba(0,0,0,0.4);
         }
+
         .sub {
-          background: none;
-          border: none;
-          cursor: pointer;
           display: flex;
-          gap: 20px;
-          padding: 10px;
-          text-decoration: none;
+          gap: 30px;
+          align-items: center;
         }
+
         .bar {
-          color: rgb(255, 255, 255);
-          font-weight: bold;
-          text-decoration: none;
-          padding: 10px 20px;
-          border-radius: 5px;
-          transition: background-color 0.3s ease;
+          font-family: "Merriweather", serif; /* estilo editorial */
+          color: #f5f5f5;
+          font-size: 1.1rem;
+          letter-spacing: 0.5px;
+          position: relative;
+          cursor: pointer;
+          transition: color 0.3s ease;
         }
+
+        /* Efecto línea dorada debajo */
+        .bar::after {
+          content: "";
+          position: absolute;
+          left: 0;
+          bottom: -4px;
+          width: 0%;
+          height: 2px;
+          background: gold;
+          transition: width 0.3s ease;
+        }
+
         .bar:hover {
-          background-color: blue;
-          text-decoration: none;
+          color: gold;
+        }
+
+        .bar:hover::after {
+          width: 100%;
         }
       `}</style>
     </>
