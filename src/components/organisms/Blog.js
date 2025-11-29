@@ -2,17 +2,16 @@ import { useState, useEffect } from "react";
 import RelojEffect from "../molecule/RelojEffect";
 import RelojEf from "../molecule/Rolex";
 
+const datos = {
+  digital: <RelojEffect />,
+  analogico: <RelojEf />,
+  comentarios:
+    "comentarios: ¡Qué interesante! Me encantaría aprender más sobre la historia de los relojes.",
+};
+
 const Blog = () => {
   const [recurso, setRecurso] = useState("digital");
   const [contenido, setContenido] = useState("");
-
-  // Colocamos los datos de cada seccion
-  const datos = {
-    digital: <RelojEffect />,
-    analogico: <RelojEf />,
-    comentarios:
-      "comentarios: ¡Qué interesante! Me encantaría aprender más sobre la historia de los relojes.",
-  };
 
   useEffect(() => {
     setContenido(datos[recurso]);
