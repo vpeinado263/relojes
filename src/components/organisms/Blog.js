@@ -20,7 +20,7 @@ const Blog = () => {
   return (
     <>
       <nav className="navbar">
-        <div className="navbar-title">¿Quien creó el Reloj?</div>
+        <div className="navbar-title">¿Quien creó el Primer Reloj?</div>
         <div className="button-container">
           <button className="nav-button" onClick={() => setRecurso("digital")}>
             Digital
