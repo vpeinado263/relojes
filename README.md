@@ -4,17 +4,6 @@
 
 El blog está desarrollado utilizando **React** y **Next.js**, aprovechando el sistema de componentes para organizar la información de manera modular. Utilizo el contexto de React para gestionar estados globales, y los hooks para manejar el ciclo de vida y otras funcionalidades de los componentes. A través de esta tarea, aplico los conceptos como el uso del contexto, el ciclo de vida de los componentes hooks.
 
-## Contenidos del Blog
-
-1. **Introducción al Reloj**
-   - Una descripción de lo que es un reloj, sus tipos y una breve historia.
-
-2. **Tipos de Relojes**
-   - Explicación de los tipos de relojes, desde relojes de pulsera y de pared hasta los relojes digitales y análogos.
-
-3. **Primeros Relojes**
-   - Un apartado dedicado a la historia del primer reloj y quién fue su creador.
-
 ## Conceptos Aprendidos y Aplicados en el Proyecto
 
 ### 1. Contexto en React
