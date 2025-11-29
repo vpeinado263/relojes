@@ -1,10 +1,8 @@
 # 4ta-Tarea-REACT-NEXT.JS
 
-Este proyecto es un blog de relojes, cubriendo temas como los diferentes tipos de relojes y su historia, incluyendo quién fue el primero en crearlo. A través de esta tarea, aplico los conceptos como el uso del contexto, el ciclo de vida de los componentes hooks.
-
 ## Descripción del Proyecto
 
-El blog está desarrollado utilizando **React** y **Next.js**, aprovechando el sistema de componentes para organizar la información de manera modular. Utilizo el contexto de React para gestionar estados globales, y los hooks para manejar el ciclo de vida y otras funcionalidades de los componentes.
+El blog está desarrollado utilizando **React** y **Next.js**, aprovechando el sistema de componentes para organizar la información de manera modular. Utilizo el contexto de React para gestionar estados globales, y los hooks para manejar el ciclo de vida y otras funcionalidades de los componentes. A través de esta tarea, aplico los conceptos como el uso del contexto, el ciclo de vida de los componentes hooks.
 
 ## Contenidos del Blog
 
