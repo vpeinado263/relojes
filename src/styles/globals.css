@@ -1,5 +1,5 @@
 body {
-  background-color: #a6a3a7;
+  background-color: #f9e6ff;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -7,12 +7,3 @@ a {
   text-decoration: none;
 }
 
-/*Reloj analógico colocar url en estilo propio*/
-.analogoContainer {
-  background-image: url(../../public/funds/analogico.jpg);
-}
-
-/*Reloj Digital colocar url en estilo propio*/
-.digitalContainer {
-  background-image: url(../../public/funds/digital.jpg);
-}
